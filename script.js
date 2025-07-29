@@ -52,6 +52,18 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
+    // Achievement cards hover effects
+    const achievementCards = document.querySelectorAll('.achievement-card');
+    achievementCards.forEach(card => {
+        card.addEventListener('mouseenter', function() {
+            this.style.transform = 'translateY(-8px)';
+        });
+        
+        card.addEventListener('mouseleave', function() {
+            this.style.transform = 'translateY(0)';
+        });
+    });
+
     // Skill tags hover effects (for compatibility)
     const skillTags = document.querySelectorAll('.skill-tag');
     skillTags.forEach(tag => {
